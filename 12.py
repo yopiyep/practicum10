@@ -5,9 +5,9 @@ screen = turtle.Screen()
 screen.bgcolor("white")
 screen.setup(900, 700)
 screen.title("Орнамент")
+turtle.tracer(0)
 
 t = turtle.Turtle()
-t.speed(0)
 t.width(2)
 
 
