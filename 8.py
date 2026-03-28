@@ -1,5 +1,7 @@
 def convert_datetime(dt_str: str) -> None:
-    """Convert a datetime to 12-hour format"""
+    """
+    Convert a datetime to 12-hour format
+    """
     try:
         date_part, time_part = dt_str.strip().split()
         m, d, y = map(int, date_part.split('/'))
