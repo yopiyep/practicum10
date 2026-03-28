@@ -1,4 +1,5 @@
-def convert_datetime(dt_str):
+def convert_datetime(dt_str: str) -> None:
+    """Convert a datetime to 12-hour format"""
     try:
         date_part, time_part = dt_str.strip().split()
         m, d, y = map(int, date_part.split('/'))
@@ -9,5 +10,5 @@ def convert_datetime(dt_str):
 
         print(f"{d:02d}.{m:02d}.{y % 100:02d} {h12:02d}:{mn:02d}:{s:02d} {period}")
 
-    except (ValueError, IndexError):
+    except (ValueError):
         print("Ошибка: неверный формат или значения")
